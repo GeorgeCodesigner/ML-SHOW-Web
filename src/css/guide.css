@@ -1,0 +1,19 @@
+.guide-content{
+    width: 7rem;
+    margin: 10px 0.25rem 10px 0.25rem;
+}
+.gc-logo,
+.gc-img-1{
+    width: 100%;
+}
+.gc-body{
+    overflow-y:scroll;
+    height:400px;
+    padding: 0 3px;
+}
+.gc-submit{
+    background: #20077C;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 10px;
+}

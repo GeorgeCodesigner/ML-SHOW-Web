@@ -1,0 +1,18 @@
+.header-wrap{
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: #20077C;
+    width: 7.5rem;
+    height: 1rem;
+}
+.header-backicon{
+    color: #ffffff;
+    font-size:0.36rem;
+    padding: 0 10px;
+}
+.header-title{
+    color: #ffffff;
+    font-size: 0.36rem;
+    line-height: 1rem;
+    margin-left: 5px;
+}
