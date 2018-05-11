@@ -9,7 +9,7 @@ export default class Footer extends Component {
         return (
             <footer className='footer-wrap'>
                 <p style={{marginBottom:'3px'}}>此作品仅用于学习,不作商业用途</p>
-                <p style={{marginBottom:'3px'}}>Product by George Chen</p>
+                <p style={{marginBottom:'3px'}}>Produced by George Chen</p>
             </footer>
         );
     }
