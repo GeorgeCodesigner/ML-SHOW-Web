@@ -16,3 +16,14 @@ export default (() => {
         document.documentElement.firstElementChild.appendChild(fontE1);
     })()
 })()
+//点击效果的设置
+export function clickWave(dom) {
+    let className=dom.className;
+    dom.onclick=function(){
+        dom.className=className+" waveShow";
+        setTimeout(function () {
+            dom.className=className;
+        }, 500)
+    };
+};
+

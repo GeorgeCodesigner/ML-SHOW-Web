@@ -1,14 +1,22 @@
 .guide-content{
     width: 7rem;
     margin: 10px 0.25rem 10px 0.25rem;
+    padding: 0.5rem;
+    float: none;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    height: 11rem;
 }
-.gc-logo,
+.gc-logo{
+    width: 1rem;
+    margin-left: 2.5rem;
+}
 .gc-img-1{
     width: 100%;
 }
 .gc-body{
     overflow-y:scroll;
-    height:400px;
+    height:8rem;
     padding: 0 3px;
 }
 .gc-submit{

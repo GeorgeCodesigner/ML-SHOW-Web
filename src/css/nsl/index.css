@@ -1,0 +1,13 @@
+.nsl-content{
+    width: 7rem;
+    margin: 10px 0.25rem 10px 0.25rem;
+    padding: 0.5rem;
+    height: 11rem;
+}
+.nsl-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

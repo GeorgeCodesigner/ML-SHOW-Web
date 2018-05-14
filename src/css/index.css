@@ -1,1 +1,26 @@
 /*通用样式*/
+/*点击波纹样式效果*/
+.waveShow{
+    animation: sploosh 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-animation: sploosh 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes sploosh {
+    0% {
+        box-shadow: 0 0 0 0px #888888;
+        background: #888888;
+    }
+    100% {
+        box-shadow: 0 0 0 1px rgba(66, 166, 223, 0);
+        background: rgba(66, 166, 223, 0);
+    }
+}
+@-webkit-keyframes sploosh {
+    0% {
+        box-shadow: 0 0 0 0px #888888;
+        background: #888888;
+    }
+    100% {
+        box-shadow: 0 0 0 1px rgba(66, 166, 223, 0);
+        background: rgba(66, 166, 223, 0);
+    }
+}

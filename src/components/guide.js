@@ -10,9 +10,6 @@ import 'antd/dist/antd.css';
 export default class Guide extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        };
     }
     submit() {
         sessionStorage.setItem("token",new Date().getTime());
