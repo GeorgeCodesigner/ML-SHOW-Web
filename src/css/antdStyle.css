@@ -1,0 +1,34 @@
+/*antd样式改写*/
+/*面包屑导航*/
+.ant-breadcrumb-separator{
+    margin: 0 3px;
+}
+/*折叠面板*/
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow{
+    left: 18px;
+}
+/*Radio标签页*/
+.ant-collapse-content > .ant-collapse-content-box {
+    text-align: center;
+}
+/*Spin加载中...*/
+.ant-spin{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #20077C;
+}
+.ant-spin-dot i{
+    background-color: #20077C;
+}
+/*Alert警告框...*/
+.ant-alert{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 3rem;
+}

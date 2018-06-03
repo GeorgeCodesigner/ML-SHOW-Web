@@ -20,6 +20,8 @@
     padding: 0 3px;
 }
 .gc-submit{
+    height: 0.64rem;
+    font-size: 0.36rem;
     background: #20077C;
     color: #FFFFFF;
     width: 100%;

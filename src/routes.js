@@ -9,17 +9,23 @@ const Guide = (location,cb)=>{
         cb(null,require('./components/guide.js').default)
     },'Guide')
 };
-// 第二大类的list
-const SecondList = (location,cb)=>{
+// 监督学习
+const SupLearn = (location,cb)=>{
     require.ensure([],require=>{
-        cb(null,require('./components/SecondList.js').default)
-    },'SecondList')
+        cb(null,require('./components/sl/index.js').default)
+    },'SupLearn')
 };
 // 线性回归算法
 const LinealReg = (location,cb)=>{
     require.ensure([],require=>{
         cb(null,require('./components/sl/LinealReg.js').default)
     },'LinealReg')
+};
+// 线性回归算法下的各个算法
+const lrTypeIndex = (location,cb)=>{
+    require.ensure([],require=>{
+        cb(null,require('./components/sl/LinealReg/lrTypeIndex').default)
+    },'lrTypeIndex')
 };
 // Logistic分类算法
 const LogisticReg = (location,cb)=>{
@@ -32,6 +38,18 @@ const NeuralNet = (location,cb)=>{
     require.ensure([],require=>{
         cb(null,require('./components/sl/NeuralNet.js').default)
     },'NeuralNet')
+};
+// 无监督学习
+const NotSupLearn = (location,cb)=>{
+    require.ensure([],require=>{
+        cb(null,require('./components/nsl/index.js').default)
+    },'NotSupLearn')
+};
+// 深度学习
+const DeepLearn = (location,cb)=>{
+    require.ensure([],require=>{
+        cb(null,require('./components/dl/index.js').default)
+    },'DeepLearn')
 };
 /* 是否阅读了引导从而进入主页的判断 */
 function isReadGuide(nextState, replaceState) {
@@ -46,13 +64,21 @@ export default class Routes extends Component {
             <Router history={hashHistory}>
                 <Route path="/" component={App} onEnter={isReadGuide}>
                     <IndexRoute component={Welcome} />
-                    <Route path="/:secId" getComponent={SecondList}></Route>
+                    {/*监督学习*/}
+                    <Route path="/sl" getComponent={SupLearn}></Route>
                     {/*线性回归算法*/}
                     <Route path="/sl/linealReg" getComponent={LinealReg}></Route>
+                    {/*线性回归算法下的各个算法*/}
+                    <Route path="/sl/linealReg/:type" getComponent={lrTypeIndex}></Route>
                     {/*Logistic分类算法*/}
                     <Route path="/sl/logisticReg" getComponent={LogisticReg}></Route>
                     {/*神经网络算法*/}
                     <Route path="/sl/neuralNet" getComponent={NeuralNet}></Route>
+
+                    {/*无监督学习*/}
+                    <Route path="/nsl" getComponent={NotSupLearn}></Route>
+                    {/*深度学习*/}
+                    <Route path="/dl" getComponent={DeepLearn}></Route>
                 </Route>
                 <Route path="/guide" getComponent={Guide} />
             </Router>

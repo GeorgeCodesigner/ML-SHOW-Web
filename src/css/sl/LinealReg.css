@@ -1,6 +1,42 @@
 .lr-content{
     width: 7rem;
     margin: 10px 0.25rem 10px 0.25rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    height: 11rem;
+}
+/*单变量线性回归样式*/
+.lr-ov-content{
+    width: 7rem;
+    margin: 10px 0.25rem 10px 0.25rem;
+    padding: 0.5rem 0;
+    height: 11rem;
+}
+.lr-ov-query{
+    margin-top: 10px;
+    text-align:center;
+    height:6rem;
+    overflow-y:auto
+}
+.lr-ov-query>p{
+    text-align: right;
+    width:100%;
+    font-size: 12px;
+}
+.lr-ov-query p{
+    margin-bottom: 3px;
+}
+.lr-ov-algo{
+    height:8rem;
+    overflow-y: auto;
+}
+.lr-ov-algo p{
+    margin-bottom: 3px;
+    text-align: left;
+}
+/*多变量线性回归样式*/
+.lr-mv-content{
+    width: 7rem;
+    margin: 10px 0.25rem 10px 0.25rem;
+    padding: 0.5rem 0;
     height: 11rem;
 }

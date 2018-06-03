@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { hashHistory } from 'react-router'
 
 import Header from './header';
-import ListCard from './listCrad';
+import ListCard from './listCard';
 import Footer from './footer';
 import 'antd/dist/antd.css';
 import '../css/welcome.css';
@@ -10,9 +10,6 @@ import '../css/welcome.css';
 export default class Welcome extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        };
     }
     // 跳转到下一页
     goNext(id){
