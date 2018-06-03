@@ -7,3 +7,8 @@ npm install:安装需要的node_module
 npm start:本地运行该项目
 npm run build:打包项目
 提示：为了追求最好的预览效果，请用浏览器中的手机模拟器打开。
+# 后台服务地址
+https://github.com/GeorgeCodesigner/ML-SHOW-Server
+注意：后台服务需要使用Python3以上版本启动，如果需要改请求后台的地址，只需要修改文件：config.js的后台服务路径即可。
+# 爬虫项目地址
+https://github.com/GeorgeCodesigner/ML-SHOW-Spider
